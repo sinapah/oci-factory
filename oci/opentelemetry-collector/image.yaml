@@ -1,18 +1,21 @@
-version: 1
+version: 2
 upload:
   - source: canonical/opentelemetry-collector-rock
-    commit: 51c4595e7f8b29a90cdfb25dc6439ae0b736c83e
-    directory: 0.147.0
+    commit: 0f77029669c7b2b0d0dcefb5c8d27ad1200446f4
+    directory: 0.149.0
     release:
       0-24.04:
-        end-of-life: '2026-06-02T00:00:00Z'
+        end-of-life: '2026-07-14T00:00:00Z'
         risks:
           - stable
-      0.147-24.04:
-        end-of-life: '2026-06-02T00:00:00Z'
+      0.149-24.04:
+        end-of-life: '2026-07-14T00:00:00Z'
         risks:
           - stable
-      0.147.0-24.04:
-        end-of-life: '2026-03-02T00:00:00Z'
+      0.149.0-24.04:
+        end-of-life: '2026-04-16T00:00:00Z'
         risks:
           - stable
+    ignored-vulnerabilities:
+      - CVE-2026-34040  # Needs evaluation. https://ubuntu.com/security/CVE-2026-34040
+      - CVE-2026-39883  # Needs evaluation. https://ubuntu.com/security/CVE-2026-39883
