@@ -1,0 +1,17 @@
+version: '2'
+
+application: litmuschaos-subscriber
+website: https://litmuschaos.io/
+source-code: https://github.com/canonical/litmus-rocks
+issues: https://github.com/canonical/litmus-rocks/issues
+description: |
+  Litmus subscriber is an execution-plane agent that connects to the Litmus ChaosCenter via WebSocket.
+  It runs inside a target Kubernetes cluster and relays chaos experiment status and results back to ChaosCenter.
+  Read more in the [official documentation](https://github.com/litmuschaos/litmus).
+
+docker:
+  run_conclusion: |
+    The subscriber is designed to be deployed as part of a Kubernetes cluster.
+    It requires a running Litmus ChaosCenter instance to connect to via WebSocket.
+    Refer to the [official installation guide](https://docs.litmuschaos.io/docs/getting-started/installation)
+    for deployment instructions.
