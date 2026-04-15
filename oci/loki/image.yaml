@@ -1,7 +1,7 @@
 version: 2
 upload:
   - source: canonical/loki-rock
-    commit: a9546e66af0881b6b18775fba47435e1274dda71
+    commit: e03a03d797934b84ca0ef55366996d5a4a41da4f
     directory: 3.7.1
     release:
       3-24.04:
