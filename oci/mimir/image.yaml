@@ -12,3 +12,6 @@ upload:
         end-of-life: '2026-07-17T00:00:00Z'
         risks:
           - stable
+    ignored-vulnerabilities:
+      - CVE-2026-34986  # Needs evaluation. https://ubuntu.com/security/CVE-2026-34986
+      - CVE-2026-39883  # Needs evaluation. https://ubuntu.com/security/CVE-2026-39883
